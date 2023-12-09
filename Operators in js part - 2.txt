@@ -1,0 +1,69 @@
+ASSIGNMENT QUESTIONS 
+( Operators In JavaScript Part - 2 )
+( Index.HTML )
+
+1. Explain the usage of ternary operator with syntax and write a program to check whether the number is even  or odd using the ternary operator. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    The usage of ternary operators is it allows you to evaluate conditional expressions and can substitute for if statements in some cases. It allows you to write shorter and cleaner code (even on one line).
+
+    2.   Describe the usage of the comma operator in JavaScript and provide an example?
+    Ans. You can use the comma operator when you want to include multiple expressions in a location that requires 
+         a single expression. The most common usage of this operator is to supply multiple updaters in a for loop.
+
+    3.   Use a nested ternary operator to check that a number is positive, negative or zero. You have to print       “positive” if the number is positive and similarly for negative and zero also.
+
+    4.   Use a ternary operator to check that a person is eligible to vote or not by checking his age. If the age of the person is less than 18 then “You cannot vote” should be logged else “You can vote” should be logged?
+
+</body>
+</html>
+
+(Script.JS)
+
+1. //(Even)//
+const number = 12;
+const result = number % 2 === 0 ? "Even" : "Odd" ;
+console.log(result) ;
+  // (Odd)//
+const numb = 25;
+const res = numb % 2 === 0 ? "Even" : "Odd" ;
+console.log(res) ;
+
+// output(1)//
+// Even //
+// output(2)//
+// Odd //
+
+2. //comma Operator//
+const a = 5, b = 8, c = 12;
+console.log(a, b, c);
+
+//output//
+// 5 8 12 // 
+
+3. 
+const num = 26;
+num > 0
+ ? console.log( "Positive" )
+ : num < 0
+ ? console.log( "Negative" )
+ : console.log( "Zero" );
+
+ //output//
+ //positive//
+
+ 4.
+const age = 18;
+age < 25 ? console.log( "You Can Vote" ) : console.log( "You Can't Vote" );
+
+//output//
+//You Can Vote//
+
